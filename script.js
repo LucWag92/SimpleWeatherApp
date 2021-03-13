@@ -6,7 +6,7 @@ import {
 } from './js-helper/weather-data.js';
 import fillWeatherBox from './js-helper/fill-weather-box.js';
 
-const APITOKEN = 'XXX';
+const APITOKEN = 'f546a1144ece882e307296366730bfe3';
 
 const searchWeather = async () => {
   const cityName = ELEMENTS.ELEMENT_INPUT.value.trim();
