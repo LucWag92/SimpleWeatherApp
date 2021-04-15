@@ -11,7 +11,8 @@ export const WEATHER_PROXY_HANDLER = {
     return Reflect.get(target, property);
   },
   set: function (target, property, value) {
-    const newValue = (value * 1.8 + 32).toFixed(2) + ' F.';
+    let newValue = (value * 1.8 + 32).toFixed(2) + ' F.';
+    newValue = value.toFixed(2) + ' C.';
     return Reflect.set(target, property, newValue);
   },
 };
